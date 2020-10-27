@@ -68,7 +68,7 @@ def cars_dict_to_table(car_data):
 
 def main(argv):
   """Process the JSON data and generate a full report out of it."""
-  data = load_data("car_sales.json")
+  data = load_data(argv[1])
   summary = process_data(data)
   table_data = cars_dict_to_table(data)
   #  turn this into a PDF report
